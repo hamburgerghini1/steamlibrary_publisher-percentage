@@ -2,10 +2,15 @@ import requests
 import csv
 import time
 from collections import Counter
+import os
 
-# Replace these with your Steam API key and Steam ID
-API_KEY = "ENTER YOUR API KEY HERE"
-STEAM_ID = "ENTER YOUR STEAMID HERE"
+# Fetch the API key and Steam ID from environment variables (set by GitHub Secrets)
+API_KEY = os.getenv("STEAM_API_KEY")
+STEAM_ID = os.getenv("STEAM_ID")
+
+# Validate if the environment variables are loaded correctly
+if not API_KEY or not STEAM_ID:
+    raise ValueError("STEAM_API_KEY and STEAM_ID must be set in the environment.")
 
 # Fetch owned games with metadata
 def fetch_owned_games(api_key, steam_id):
