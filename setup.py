@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="steamlibrary_publisher_percentage",  # The name of your package
-    version="1.0",  # Update this for new versions
+    version="1.0.1",  # Update this for new versions
     py_modules=["steam-exporter"],  # Your Python script without the .py extension
     description="A Python package to calculate publisher percentages for Steam libraries",
     long_description=open("README.md").read(),
