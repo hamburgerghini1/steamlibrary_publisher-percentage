@@ -29,4 +29,4 @@ jobs:
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
           STEAM_ID: ${{ secrets.STEAM_ID }}
         run: |
-          python your_script.py  # Replace with your script filename
+          python steam-exporter.py  # Replace with your script filename
