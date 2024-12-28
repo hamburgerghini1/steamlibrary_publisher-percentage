@@ -7,4 +7,4 @@ Get steamid from https://steamdb.info/
 
 Get API key from https://steamcommunity.com/dev/apikey
 
-Available from PyPi https://pypi.org/project/steamlibrary-publisher-percentage/1.0/
+Available from PyPi https://pypi.org/project/steamlibrary-publisher-percentage
